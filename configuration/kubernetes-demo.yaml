@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: kubernetes-demo-deployment
+  namespace: k8s-dev
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: web
+    spec:
+      containers:
+        - name: kubernetes-demo
+          image: mandockerhouse/kubernetes-demo-develop.20190414.2
