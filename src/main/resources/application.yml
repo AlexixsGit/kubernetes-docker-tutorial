@@ -1,2 +1,4 @@
-server:
-  port: 8085
+server.port: 8085
+kubernetes.cloudant.binding.path: /home/alexis/Documents/java projects/secrets/
+kubernetes.cloudant.binding.file: secret.json
+   
